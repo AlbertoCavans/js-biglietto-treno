@@ -35,5 +35,6 @@ if (clientAge < 18) {
 const finalPrice = priceOnlyByKm - discount;
 
 /* Print final price */
-const labelPrice = "Il tuo biglietto del treno costerà:" + finalPrice + "€";
+const labelPrice =
+  "Il tuo biglietto del treno costerà: " + finalPrice.toFixed(2) + "€";
 resultElement.innerText = labelPrice;
