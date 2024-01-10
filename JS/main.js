@@ -30,3 +30,10 @@ if (clientAge < 18) {
   discount = (priceOnlyByKm / 100) * 0;
   console.log(discount);
 }
+
+/* Final price */
+const finalPrice = priceOnlyByKm - discount;
+
+/* Print final price */
+const labelPrice = "Il tuo biglietto del treno costerà:" + finalPrice + "€";
+resultElement.innerText = labelPrice;
