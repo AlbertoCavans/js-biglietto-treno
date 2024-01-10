@@ -13,4 +13,20 @@ console.log(clientAge);
 const priceOnlyByKm = kmRoute * 0.21;
 console.log(priceOnlyByKm);
 
+/* discount */
+let discount;
+
 /* Calculate discounts */
+/*!!!!! Underage discount */
+if (clientAge < 18) {
+  discount = (priceOnlyByKm / 100) * 20;
+  console.log(discount);
+} else if (clientAge >= 18) {
+  /*!!!!! NO discount */
+  discount = (priceOnlyByKm / 100) * 40;
+  console.log(discount);
+} else if (clientAge > 65) {
+  /*  !!!!! OVER65 discount */
+  discount = (priceOnlyByKm / 100) * 0;
+  console.log(discount);
+}
