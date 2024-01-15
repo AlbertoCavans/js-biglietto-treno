@@ -21,13 +21,13 @@ if (!isNaN(kmRoute) && !isNaN(clientAge)) {
   if (clientAge < 18) {
     discount = (priceOnlyByKm / 100) * 20;
     console.log(discount);
-  } else if (clientAge >= 18) {
+  } else if (clientAge >= 66) {
     /*!!!!! NO discount */
-    discount = (priceOnlyByKm / 100) * 0;
-    console.log(discount);
-  } else if (clientAge > 65) {
-    /*  !!!!! OVER65 discount */
     discount = (priceOnlyByKm / 100) * 40;
+    console.log(discount);
+  } else if (clientAge >= 18) {
+    /*  !!!!! OVER65 discount */
+    discount = (priceOnlyByKm / 100) * 0;
     console.log(discount);
   }
 
